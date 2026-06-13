@@ -1,0 +1,72 @@
+{
+    "Vanilla_RNN_Baseline": {
+        "architecture": {
+            "type": "VANILLA",
+            "hidden_size": 64,
+            "layers": 1,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 4353,
+        "metrics": {
+            "RMSE_USD": 33.51,
+            "MAPE_percent": 15.28
+        }
+    },
+    "Shallow_LSTM": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 1,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 17217,
+        "metrics": {
+            "RMSE_USD": 36.43,
+            "MAPE_percent": 16.78
+        }
+    },
+    "Deep_LSTM": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 3,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 83777,
+        "metrics": {
+            "RMSE_USD": 81.98,
+            "MAPE_percent": 44.5
+        }
+    },
+    "Deep_LSTM_Res": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 4,
+            "dropout": 0.2,
+            "res": true
+        },
+        "total_weights": 117057,
+        "metrics": {
+            "RMSE_USD": 51.31,
+            "MAPE_percent": 23.52
+        }
+    },
+    "Shallow_GRU": {
+        "architecture": {
+            "type": "GRU",
+            "hidden_size": 64,
+            "layers": 1,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 12929,
+        "metrics": {
+            "RMSE_USD": 28.22,
+            "MAPE_percent": 11.97
+        }
+    }
+}

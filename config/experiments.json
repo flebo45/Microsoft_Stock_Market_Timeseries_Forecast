@@ -1,0 +1,37 @@
+{
+  "Vanilla_RNN_Baseline": {
+    "type": "VANILLA",
+    "hidden_size": 64,
+    "layers": 1,
+    "dropout": 0.2,
+    "res": false
+  },
+  "Shallow_LSTM": {
+    "type": "LSTM",
+    "hidden_size": 64,
+    "layers": 1,
+    "dropout": 0.2,
+    "res": false
+  },
+  "Deep_LSTM": {
+    "type": "LSTM",
+    "hidden_size": 64,
+    "layers": 3,
+    "dropout": 0.2,
+    "res": false
+  },
+  "Deep_LSTM_Res": {
+    "type": "LSTM",
+    "hidden_size": 64,
+    "layers": 4,
+    "dropout": 0.2,
+    "res": true
+  },
+  "Shallow_GRU": {
+    "type": "GRU",
+    "hidden_size": 64,
+    "layers": 1,
+    "dropout": 0.2,
+    "res": false
+  }
+}
