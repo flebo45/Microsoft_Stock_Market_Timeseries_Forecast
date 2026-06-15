@@ -21,6 +21,7 @@ Rather than deploying a single algorithm, this project evaluates the theoretical
 4. [Installation & Setup](#5-installation--setup)
 5. [Usage & Configuration](#6-usage--configuration)
 6. [Results & Output](#7-results--output)
+7. [Conclusions](#8-conclusions)
 
 ---
 
@@ -109,3 +110,16 @@ Upon completion, the script automatically generates two artifacts in the `result
 
 1. `summary\_[TIMESTAMP].json`: A comprehensive metadata file logging the exact architecture configurations, parameter counts (weight footprint), RMSE (USD), and MAPE (%) for every tested model.
 2. `stock_predictions_[TIMESTAMP].png`: A high-resolution overlay of all model predictions against the actual Microsoft stock ground-truth line.
+
+---
+
+## 8. Conclusions
+
+An extensive ablation study and hyperparameter analysis was conducted to evaluate the capabilities and mathematical limits of deep temporal architectures. Throughout the study, we systematically isolated and tested:
+
+- **Vertical Depth:** Residual skip-connections vs. Vanishing Gradients.
+- **Optimization Dynamics:** Learning rate sensitivity and Model Collapse.
+- **Temporal Memory:** Lookback window lengths (Chunk Sizes).
+- **Representational Capacity:** Hidden unit dimensionality (Underfitting vs. Overfitting).
+
+For the comprehensive breakdown of these experiments, side-by-side visual comparisons, and our final theoretical takeaways regarding the limits of raw price extrapolation, please read the detailed [CONCLUSIONS.md](CONCLUSIONS.md) file.
