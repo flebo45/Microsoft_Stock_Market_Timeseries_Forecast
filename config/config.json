@@ -3,12 +3,12 @@
     "file_path": "../data/dataset.csv",
     "input_features": 1,
     "output_features": 1,
-    "chunk_size": 21,
+    "chunk_size": 12,
     "batch_size": 64
   },
   "training": {
     "epochs": 150,
-    "learning_rate": 0.001,
+    "learning_rate": 0.003,
     "patience": 15
   }
 }

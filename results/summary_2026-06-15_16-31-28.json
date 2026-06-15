@@ -1,0 +1,114 @@
+{
+    "Vanilla_RNN_Baseline": {
+        "architecture": {
+            "type": "VANILLA",
+            "hidden_size": 64,
+            "layers": 1,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 4353,
+        "metrics": {
+            "RMSE_USD": 33.55,
+            "MAPE_percent": 15.57
+        }
+    },
+    "Shallow_LSTM": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 1,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 17217,
+        "metrics": {
+            "RMSE_USD": 23.94,
+            "MAPE_percent": 10.61
+        }
+    },
+    "Deep_LSTM": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 3,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 83777,
+        "metrics": {
+            "RMSE_USD": 86.99,
+            "MAPE_percent": 48.27
+        }
+    },
+    "Shallow_LSTM_Res": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 1,
+            "dropout": 0.2,
+            "res": true
+        },
+        "total_weights": 17217,
+        "metrics": {
+            "RMSE_USD": 28.08,
+            "MAPE_percent": 12.45
+        }
+    },
+    "Deep_LSTM_Res": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 4,
+            "dropout": 0.2,
+            "res": true
+        },
+        "total_weights": 117057,
+        "metrics": {
+            "RMSE_USD": 57.36,
+            "MAPE_percent": 27.2
+        }
+    },
+    "Super_Deep_LSTM": {
+        "architecture": {
+            "type": "LSTM",
+            "hidden_size": 64,
+            "layers": 6,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 183617,
+        "metrics": {
+            "RMSE_USD": 101.84,
+            "MAPE_percent": 59.56
+        }
+    },
+    "Shallow_GRU": {
+        "architecture": {
+            "type": "GRU",
+            "hidden_size": 64,
+            "layers": 1,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 12929,
+        "metrics": {
+            "RMSE_USD": 28.18,
+            "MAPE_percent": 12.25
+        }
+    },
+    "Deep_GRU": {
+        "architecture": {
+            "type": "GRU",
+            "hidden_size": 64,
+            "layers": 3,
+            "dropout": 0.2,
+            "res": false
+        },
+        "total_weights": 62849,
+        "metrics": {
+            "RMSE_USD": 78.04,
+            "MAPE_percent": 41.17
+        }
+    }
+}
