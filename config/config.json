@@ -3,7 +3,7 @@
     "file_path": "../data/dataset.csv",
     "input_features": 1,
     "output_features": 1,
-    "chunk_size": 12,
+    "chunk_size": 21,
     "batch_size": 64
   },
   "training": {

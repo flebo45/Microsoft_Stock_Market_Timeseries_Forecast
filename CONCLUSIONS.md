@@ -86,9 +86,9 @@ To evaluate how representational capacity affects forecasting, we tested the arc
 
 ![FINAL](results/stock_predictions_2026-06-15_16-50-17.png)
 
-To conclude our hyperparameter tuning, we tested a combined configuration designed to maximize reactivity and capacity: **Chunk Size = 12, Learning Rate = 0.003, and Hidden Units = 128.**
+To conclude our hyperparameter tuning, we tested a combined configuration designed to maximize reactivity and capacity: **Chunk Size = 21, Learning Rate = 0.003, and Hidden Units = 128.**
 
-**Expectation:** \* A short 12-day window forces the network to focus on immediate, short-term price action.
+**Expectation:** \* A short 21-day window forces the network to focus on immediate, short-term price action.
 
 - A massive 128-neuron width provides high representational capacity.
 - A 0.003 learning rate allows the optimizer to take aggressive steps.
